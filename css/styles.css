@@ -1,0 +1,1237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* !! Don't include in Shopify CSS | START !! */
+h1, h2, h3, h4, h5, h6, button {
+    font-family: "Montserrat", sans-serif;
+}
+
+p, small, li {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+form .placeholder {
+    margin: 0 auto;
+}
+
+.form-item {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+form .form-item label {
+    margin-bottom: 0.25rem;
+    font-size: 0.75rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: left;
+    color: #9c9c9c;
+}
+
+form .form-item input {
+    padding: 0.75rem 0;
+    border: none;
+    border-bottom: 3px solid #A9A8A9;
+    background-color: #EDEDED;
+}
+/* !! Don't include in Shopify CSS | END !! */
+
+
+
+/* Utility Classes | START */
+
+.section-spacer {
+    margin-bottom: 3rem;
+    padding: 2rem 0;
+}
+
+.content-container {
+    margin: 0 auto;
+    padding:  0 1rem;
+    width: min(100%, 100rem);
+    text-align: center;
+}
+
+.section-container-black {
+    background-color: #1b1b1b;
+    color: #ffffff; 
+}
+
+.section-container-gray-100 {
+    background-color: #F0F0F0;
+    color: #1b1b1b; 
+}
+.section-container-gray-200 {
+    background-color: #EDEDED;
+    color: #1b1b1b; 
+}
+
+.section-container-footer {
+    background-color: #F5F3ED;
+    color: #1b1b1b; 
+}
+
+.section-container-white {
+    background-color: #ffffff;
+    color: #1b1b1b; 
+}
+
+.section-container-orange {
+    background-color: #FF6C0C;
+    color: #1b1b1b; 
+}
+
+.section-container-gray100 {
+    background-color: #f8f8f8;
+    color: #575757; 
+}
+
+.img-full-width {
+    width: 100%;
+}
+
+a.cta-link {
+    text-decoration: none;
+}
+
+button.cta-template {
+    /* margin-top: 2rem; */
+    padding: 1rem 1rem;
+    width: min(100%, 21rem);
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #FFED00;
+    transition: all 200ms ease;
+}
+
+button.cta-template:hover {
+    color: #1b1b1b;
+    background-color: #fcca00 ;
+}
+
+button.cta-template.orange-bg {
+    margin-top: 2rem;
+    padding: 1rem 1rem;
+    width: min(100%, 25rem);
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #FF6C0C;
+    transition: all 200ms ease;
+}
+
+button.cta-template.orange-bg:hover {
+    color: #1b1b1b;
+    background-color: #fceb00 ;
+}
+
+button.cta-template.secondary {
+    margin-top: 0;
+    padding: 1rem 1rem;
+    width: min(100%, 21rem);
+    font-weight: 800;
+    color: #ffffff;
+    background-color: #1b1b1b;
+    transition: all 200ms ease;
+}
+
+button.cta-template.secondary:hover {
+    color: #1b1b1b;
+    background-color: #fceb00;
+}
+
+button.cta-template.tertiary {
+    margin-top: 0;
+    padding: 1rem 1rem;
+    width: min(100%, 21rem);
+    font-weight: 800;
+    color: #1b1b1b;
+    background-color: #fceb00;
+    transition: all 200ms ease;
+}
+
+button.cta-template.tertiary:hover {
+    color: #ffffff;
+    background-color: #FF6C0C;
+}
+
+button.secondary-nav {
+    margin-top: 1rem;
+    padding: 0.7rem 0;
+    width: min(100%, 15rem);
+    font-weight: 600;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    background-color: #FF6C0C;
+    transition: all 200ms ease;
+}
+
+button.secondary-nav:hover {
+    background-color: #1b1b1b;
+}
+
+button.secondary {
+    margin-top: 0;
+    padding: 0.75rem 0.5rem;
+    width: min(100%, 21rem);
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+    /* border: 2px solid #FF6C0C; */
+    background-color: #FF6C0C;
+    transition: all 200ms ease;
+}
+/* Utility Classes | END */
+
+
+
+/* MAIN STYLES */
+
+/* Header section | START */
+.electrification-header-container {
+    margin: 0;
+    padding: 0 0 0.5rem 0;
+    position: relative;
+    background-image: url(https://cdn.shopify.com/s/files/1/1393/7021/files/electrification-hero-img-mobile.jpg?v=1736885281);
+    background-size: min(70%, 600px);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #000000;
+}
+
+.electrification-header-container::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0;
+}
+
+.electrification-header-container  .content-container {
+    position: relative;
+    z-index: 100;
+    /* width: min(100%, 55rem); */
+}
+
+.electrification-header-container img.liftow-logo  {
+    margin: 1rem 0 2rem 0;
+    max-width: 270px;
+    /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .2); */
+}
+
+.header-content-container {
+    margin: 0 auto;
+    width: min(100%, 800px);
+}
+
+.header-content-container h1 {
+    margin-bottom: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #FF6C0C;
+    filter: drop-shadow(3px 3px 2px #000000);
+}
+
+.header-content-container p {
+    font-size: 1rem;
+    line-height: 160%
+}
+
+.electrification-header-container button.hero {
+    margin: 2rem 0 2rem 0;
+    display: none;
+}
+
+.electrification-header-container .product-img {
+    width: min(100%, 600px);
+}
+
+@media (min-width: 40rem) {
+    .header-content-container h1 {
+        margin-top: 2.7rem;
+    }
+}
+
+@media (min-width: 65rem) {
+    .header-content-container h1 {
+        margin-top: 4rem;
+    }
+}
+
+@media (min-width: 75rem) {
+    .electrification-header-container {
+        padding: 0;
+        background-image: url(https://cdn.shopify.com/s/files/1/1393/7021/files/electrification-hero-img-desktop.jpg?v=1736885281);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #000000;
+    }
+
+    .hero-content-wrapper {
+        margin: 0 auto;
+        width: min(100%, 1600px);
+        height: 750px;
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+
+    .electrification-header-container .content-container {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        position: relative;
+        top: 7.5rem;
+    }
+
+    .electrification-header-container img.liftow-logo  {
+        margin: 0 0 1rem 0;
+        max-width: 330px;
+    }
+
+    .header-content-container h1 {
+        margin: 0 0 1rem 0;
+        font-size: 2.9rem;
+    }
+
+    .header-content-container p {
+        padding: 0 4rem;
+    }
+
+    .electrification-header-container .product-img {
+        width: min(100%, 850px);
+    }
+
+    .electrification-header-container button.cta-template {
+        display: none;
+    }
+
+}
+
+/* Header section | END */
+
+
+/* Form | START */
+
+.action-contact-form {
+    margin: 1.5rem auto 2rem auto;
+    padding: 2rem 2rem;
+    width: min(100%, 700px);
+    position: relative;
+    z-index: 100;
+    border-radius: 0.25rem;
+    background-color: rgba(36, 36, 36, 1);
+    box-shadow: 4px 4px 6px 1px rgba(0, 0, 0, .2);
+}
+
+.action-contact-form h3 {
+    margin: 0 0 2.5rem 0;
+    font-size: 1.6rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 90%;
+    color: #d4d4d4;
+}
+
+.action-contact-form .secondary-content {
+    margin-top: 1.5rem;
+    color: #77777a;
+}
+
+@media (min-width: 45rem) {
+    
+    .action-contact-form h3 {
+        font-size: 1.6rem;
+        line-height: 90%;
+    }
+
+}
+
+@media (min-width: 75rem) {
+    .form-content-container.content-container {
+        position: relative;
+        top: 70px;
+        right: 0;
+    }
+
+    .action-contact-form {
+        margin: 3.5rem auto 2rem auto;
+        width: min(100%, 550px);
+    }
+
+}
+
+
+.action-contact-form button {
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #FF6C0C;
+}
+
+/* Form | END */
+
+
+
+/* Liftow Partnership | START */
+.liftow-partnership {
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.liftow-partnership .content-container h2 {
+    font-size: 2.1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #FF6C0C;
+} 
+
+.liftow-partnership .content-container p {
+    font-size: 1.3rem;
+    color: #77777a;
+}
+
+.liftow-partnership .content-container p span {
+    font-weight: 700;
+}
+
+.liftow-partnership .card-icon {
+    width: min(30%, 100px);
+}
+
+.liftow-partnership .card-container h3 {
+    margin: 0.4rem 0 0.4rem 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #77777a;
+}
+
+.liftow-partnership .card-container p {
+    font-size: 1rem;
+    color: #77777a;
+}
+
+@media (min-width: 75rem) {
+    .liftow-partnership {
+        padding: 8rem 1rem 2rem 1rem;
+    }
+
+    .liftow-partnership .card-container {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+}
+
+/* Liftow Partnership | END */
+
+
+/* Cost Calculator | START */
+.cost-calculator {
+    padding: 4rem 0;
+    color: #ffffff;
+    background-image: url(https://cdn.shopify.com/s/files/1/1393/7021/files/cost-calculator-img-mobile.jpg?v=1736885281);
+    background-size: min(100%, 500px);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #000000;
+    display: none;
+}
+
+.cost-calculator .main-content-container {
+    margin: 0 auto;
+    width: min(100%, 90rem);
+    display: flex;
+}
+
+.cost-calculator .main-content-container img {
+    margin-bottom: 2rem;
+    width: 90px;
+}
+
+.cost-calculator .content-container .content-wrapper {
+    margin: 0 auto;
+    width: min(100%, 700px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cost-calculator .content-container .content-wrapper h2 {
+    margin: 0 0 1rem 0;
+    font-size: 2.1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 110%;
+    color: #FF6C0C;
+} 
+
+.cost-calculator .content-container .content-wrapper p {
+    margin-bottom: 0.5rem;
+} 
+
+.cost-calculator .content-container .content-wrapper button.cta-template {
+    margin-top: 1.5rem;
+    padding: 1rem 1rem;
+    width: 300px;
+} 
+
+@media (min-width: 75rem) {
+    .cost-calculator {
+        background-image: url(https://cdn.shopify.com/s/files/1/1393/7021/files/cost-calculator-img-desktop.jpg?v=1736885281);
+        background-size: 80%;
+        background-position: 0px 0px;
+        background-repeat: no-repeat;
+        background-color: #000000;
+    }
+
+    .cost-calculator .main-content-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 2rem;
+    }
+
+    .cost-calculator .content-container {
+        display: flex;
+        gap: 4rem;
+    }
+
+    .cost-calculator .main-content-container img {
+        margin-bottom: 0;
+        width: 150px;
+    }
+
+    .cost-calculator .content-container .content-wrapper {
+        width: 100%;
+        align-items: start;
+    } 
+    
+    .cost-calculator .content-container .content-wrapper h2 {
+        text-align: left;
+    } 
+    
+    .cost-calculator .content-container .content-wrapper p {
+        text-align: left;
+    } 
+}
+
+@media (min-width: 100rem) {
+    .cost-calculator {
+        /* background-image: url(../img/cost-calculator-img-desktop.jpg); */
+        background-size: 80%;
+        background-position: 0px 50%;
+        background-repeat: no-repeat;
+        background-color: #000000;
+    }
+}
+
+/* Cost Calculator | END */
+
+
+
+/* E-bike Giveaway Webinar | START */
+.e-bike-giveaway {
+    padding: 4rem 0;
+    color: #ffffff;
+    background-image: url(https://cdn.shopify.com/s/files/1/1393/7021/files/cost-calculator-img-mobile.jpg?v=1736885281);
+    background-size: min(100%, 500px);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #000000;
+}
+
+.e-bike-giveaway .main-content-container {
+    margin: 0 auto;
+    width: min(100%, 100rem);
+}
+
+.e-bike-giveaway .main-content-container .e-bike {
+    text-align: center;
+}
+
+.e-bike-giveaway .main-content-container .e-bike img {
+    width: min(100%, 500px);
+}
+
+.e-bike-giveaway  h2 {
+    margin-bottom: 1rem;
+    font-size: 2.4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 100%;
+    color: #FF6C0C;
+} 
+
+.e-bike-giveaway  h3 {
+    margin-bottom: 1rem;
+}
+
+/* .e-bike-giveaway form.e-bike-form {
+    margin: 3rem 0 0 0;
+}
+
+.e-bike-giveaway form.e-bike-form .email {
+    margin:  0 0 1rem 0;
+}
+
+.e-bike-giveaway form.e-bike-form input {
+    padding: 0.5rem 0.5rem;
+    width: min(100%, 600px);
+    font-size: 1rem;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.e-bike-giveaway form.e-bike-form .names {
+    width: 100%;
+}
+
+.e-bike-giveaway form.e-bike-form .name {
+    width: 100%;
+} */
+
+@media (min-width: 100rem) {
+    .e-bike-giveaway {
+        background-size: 600px;
+        background-position: 45% 0%;
+        background-repeat: no-repeat;
+        background-color: #000000;
+    }
+
+    .e-bike-giveaway .main-content-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .e-bike-giveaway button {
+        margin: 2rem 0 0 0;
+    }
+
+    /* .e-bike-giveaway form.e-bike-form input {
+        width: 100%;
+    }
+
+    .e-bike-giveaway form.e-bike-form .names {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .e-bike-giveaway form.e-bike-form .name {
+        width: 100%;
+    } */
+}
+
+
+/* E-bike Giveaway Webinar | END */
+
+
+/* Electric Equipment | START */
+.electric-equipment {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.electric-equipment h2 {
+    font-size: 2.1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 110%;
+    color: #FF6C0C;
+} 
+
+.electric-equipment .equipment-container.walkies img.equipment-img {
+    height: 200px;
+} 
+
+.electric-equipment .equipment-main-container.forklifts  img.equipment-img {
+    height: 230px;
+} 
+
+.electric-equipment .equipment-main-container h3,
+.electric-equipment .equipment-main-container.forklifts h4 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #77777a;
+} 
+
+.electric-equipment .equipment-main-container h3 {
+    margin-top: 2rem;
+} 
+
+.electric-equipment h4 {
+    margin-bottom: 0.3rem;
+    font-size: 1.1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 110%;
+    color: #77777a;
+} 
+
+.electric-equipment p {
+    font-size: 1.3rem;
+    color: #77777a;
+}
+
+.electric-equipment hr {
+    margin: 1rem auto;
+    width: 200px;
+}
+
+.electric-equipment .equipment-main-container .equipment-item {
+    margin: 3rem auto;
+    width: min(100%, 500px);
+}
+
+.electric-equipment .equipment-desc p {
+    font-size: 1rem;
+    color: #77777a;
+}
+
+.electric-equipment .equipment-info ul li {
+    list-style: none;
+    color: #77777a;
+}
+
+.electric-equipment .equipment-info ul li::before{
+    content: "\2022\a0";
+}
+
+.electric-equipment .equipment-info ul li span {
+    font-weight: 700;
+}
+
+
+
+button.cta-template.secondary {
+    padding: 0.8rem 0.8rem;
+    font-size: 0.8rem;
+    width: min(100%, 16rem);
+}
+
+.electric-equipment .equipment-main-container button.cta-template.secondary {
+    margin-top: 0;
+}
+
+.electric-equipment .equipment-main-container.forklifts button.cta-template.secondary {
+    margin-top: 1rem;
+}
+
+
+@media (min-width: 75rem) {
+    .electric-equipment .equipment-main-container {
+        margin: 0 auto;
+        width: min(100%, 100rem);
+    }
+
+    .electric-equipment .equipment-container.walkies {
+        margin: 0 auto;
+        width: min(100%, 100rem);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 8rem;
+    }
+
+    .electric-equipment .equipment-main-container.forklifts {
+        margin: 0 auto;
+        width: min(100%, 100rem);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 12rem;
+        row-gap: 0;
+    }
+}
+/* Electric Equipment | END */
+
+
+/* Environmental Benefits | START */
+.environmental-benefits {
+    margin: 0 auto;
+    padding: 4rem 1rem;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    background-image: url(https://cdn.shopify.com/s/files/1/1393/7021/files/green-bg.jpg?v=1710183289);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    /* background-color: #000000; */
+}
+
+.environmental-benefits::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.8;
+}
+
+.environmental-benefits  .content-main-container {
+    margin: 0 auto;
+    width: min(100%, 650px);
+    position: relative;
+    z-index: 100;
+}
+
+.environmental-benefits .content-container-top img {
+    margin-bottom: 2rem;
+}
+
+.environmental-benefits h2 {
+    margin-bottom: 0.4rem;
+    font-size: 2.1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 110%;
+    color: #FF6C0C;
+} 
+
+.environmental-benefits p {
+    margin-bottom: 0.5rem;
+} 
+
+.environmental-benefits .card-container {
+    margin: 2rem auto 0 auto;
+}
+
+.environmental-benefits .card {
+    margin-bottom: 2rem;
+}
+
+.environmental-benefits .card-icon {
+    width: min(30%, 100px);
+}
+
+.environmental-benefits .card-container h3 {
+    margin: 0.4rem 0 0.4rem 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.environmental-benefits .card-container p {
+    font-size: 1rem;
+}
+
+
+@media (min-width: 75rem) {
+    .environmental-benefits  .content-main-container {
+        width: min(100%, 100rem);
+    }
+
+    
+    .environmental-benefits .content-container-top {
+        margin: 0 auto;
+        width: min(100%, 55rem);
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    .environmental-benefits .content-container-top img {
+        width: 350px;
+    }
+
+    .environmental-benefits .content-container img {
+        margin-bottom: 0;
+    }
+
+    .environmental-benefits .card-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .environmental-benefits .card {
+        margin-bottom: 0;
+    }
+}
+/* Environmental Benefits | END */
+
+
+/* Operational Advantages + Strategic Benefits | START */
+.operational-advantages,
+.strategic-benefits {
+    margin: 0 0 3rem 0;
+}
+
+.operational-advantages .content,
+.strategic-benefits .content {
+    width: min(100%, 100rem);
+}
+
+.operational-advantages img,
+.strategic-benefits img {
+    width: 100%;
+}
+
+.operational-advantages h2,
+.strategic-benefits h2 {
+    margin: 2rem 0 1.2rem 0;
+    font-size: 2.1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 110%;
+    color: #FF6C0C;
+} 
+
+.operational-advantages p,
+.strategic-benefits p {
+    font-size: 1.1rem;
+    line-height: 130%;
+    color: #77777a;
+} 
+
+.operational-advantages .feature-details,
+.strategic-benefits .feature-details {
+    margin-bottom: 2rem;
+}
+
+.operational-advantages .feature-details img.checkmark,
+.strategic-benefits .feature-details img.checkmark {
+    width: 28px;
+}
+
+.operational-advantages .feature-details p span,
+.strategic-benefits .feature-details p span {
+    font-weight: 700;
+}
+
+@media (min-width: 75rem) {
+    .operational-advantages,
+    .strategic-benefits {
+        margin: 3rem 0 3rem 0;
+    }
+
+    .operational-advantages .content,
+    .strategic-benefits .content {
+        margin: 0 auto;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "img content";
+        align-items: center;
+    }
+
+    .operational-advantages .img-container,
+    .strategic-benefits .img-container {
+        grid-area: img;
+    }
+    
+    .operational-advantages .content-container,
+    .strategic-benefits .content-container {
+        margin-left: 2rem;
+        grid-area: content;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+    
+    .operational-advantages .content-container .feature-details,
+    .strategic-benefits .content-container .feature-details {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .operational-advantages .feature-details p,
+    .strategic-benefits .feature-details p {
+        text-align: left;
+    }
+}
+/* Operational Advantages | END */
+
+
+/* Economic Benefits | START */
+.economic-benefits {
+    margin: 0 auto;
+    padding: 16rem 1rem 3rem 1rem;
+    text-align: center;
+    color: #ffffff;
+    background-image: url(https://cdn.shopify.com/s/files/1/1393/7021/files/economic-benefits-img-mobile.jpg?v=1736885281);
+    background-size: min(150%, 700px);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #000000;
+}
+
+.economic-benefits .content-main-container {
+    margin: 0 auto;
+    width: min(100%, 800px);
+}
+
+.economic-benefits h2 {
+    margin-bottom: 0.3rem;
+    font-size: 2.1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 110%;
+    color: #FF6C0C;
+} 
+
+.economic-benefits p {
+    margin-bottom: 2rem;
+} 
+
+.economic-benefits p.last-para {
+    margin-bottom: 1rem;
+} 
+
+.economic-benefits .card-container {
+    width: min(100%, 500px);
+}
+
+.economic-benefits .card-icon {
+    width: min(30%, 80px);
+}
+
+.economic-benefits .sub-content h4 {
+    margin: 1rem 0 0.3rem 0;
+    font-size: 0.9rem;
+    font-weight: 700;
+} 
+
+.economic-benefits .sub-content ul {
+    margin: 0 auto;
+    width: min(100%, 300px);
+}
+
+.economic-benefits .sub-content li::before {
+    content: "\2022\a0";
+}
+
+.economic-benefits .sub-content li {
+    font-size: 0.8rem;
+    list-style-type: none;
+} 
+
+.economic-benefits .sub-content li span {
+    font-weight: 700;
+} 
+
+
+
+@media (min-width: 35rem) {
+    .economic-benefits {
+        padding: 20rem 1rem 3rem 1rem;
+    }
+}
+
+
+
+@media (min-width: 75rem) {
+    .economic-benefits {
+        padding: 3rem 1rem;
+        background-image: url(https://cdn.shopify.com/s/files/1/1393/7021/files/economic-benefits-img-desktop.jpg?v=1736885281);
+        background-size: min(100%, 2000px);
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+
+    
+    .economic-benefits .content-main-container {
+        width: min(100%, 1600px);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .economic-benefits h2 {
+        text-align: left;
+    } 
+    
+    .economic-benefits p {
+        text-align: left;
+    } 
+
+    .economic-benefits .card-container {
+        width: 100%;
+        text-align: left;
+    }
+
+    .economic-benefits .card {
+        display: flex;
+        align-items: start;
+    }
+
+    .economic-benefits .card-icon {
+        position: relative;
+        top: -7px;
+    }
+
+    .economic-benefits .sub-content ul {
+        width: 100%
+    }
+}
+/* Economic Benefits | END */
+
+
+/* Strategic Benefits | START */
+@media (min-width: 75rem) {
+    .strategic-benefits .content {
+        margin: 0 auto;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "content img";
+        align-items: center;
+    }
+
+    .strategic-benefits .img-container {
+        grid-area: img;
+    }
+    
+    .strategic-benefits .content-container {
+        margin: 0 2rem 0 0;
+        grid-area: content;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+}
+/* Strategic Benefits | END */
+
+
+/* CTA 02 | START */
+.cta-02 {
+    padding: 7rem 1rem 3rem 1rem;
+    color: #ffffff;
+    background-image: url(https://cdn.shopify.com/s/files/1/1393/7021/files/electrification-cta02-img-mobile.jpg?v=1736885281);
+    background-size: min(130%, 800px);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #000000;
+}
+
+.cta-02 .header-content-container h1 {
+    margin: 0;
+    font-size: 2.9rem;
+}
+
+.cta-02 p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.cta-02 img {
+    width: min(100%, 600px); 
+}
+
+.cta-02 button.cta-template {
+    margin: 1.5rem 0 2rem 0;
+    padding: 0.8rem 0.8rem;
+    width: 300px;
+
+} 
+
+@media (min-width: 35rem) {
+    .cta-02 {
+        padding: 7rem 1rem 3rem 1rem;
+        background-size: min(100%, 800px);
+        background-position: 50% -80px;
+    }
+}
+
+@media (min-width: 75rem) {
+    .cta-02 {
+        padding: 3rem 1rem 0rem 1rem;
+        background-image: url(https://cdn.shopify.com/s/files/1/1393/7021/files/electrification-cta02-img-desktop.jpg?v=1736885281);
+        background-size: min(120%, 2000px);
+        background-position: top;
+
+    }
+
+    .cta-02 .cta-02-content-wrapper {
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+
+    .cta-02 button.cta-template {
+        margin: 1.5rem 0 0 0;
+    
+    } 
+
+    .cta-02 img {
+        width: min(100%, 700px); 
+    }   
+}
+
+@media (min-width: 100rem) {
+    .cta-02 {
+        padding: 5rem 1rem 2rem 1rem;
+    }
+}
+/* CTA 02 | END */
+
+
+/* Footer | Condensed section | START */
+.footer-Q32024-ti-tu-landing-page .content-container-footer {
+    margin-bottom: 0;
+    padding: 2rem 1rem;
+    padding: 3.5rem 2rem 1rem 2rem;
+    text-align: center;
+}
+
+.footer-content-top img.liftow-logo  {
+    width: 300px;
+}
+
+.social-icon-container {
+    margin-bottom: 3rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.social-icon-container img {
+    height: 25px;
+}
+
+.liftow-legal {
+    color: #77777A;
+}
+
+@media (min-width: 75rem) {
+    .footer-Q32024-ti-tu-landing-page .footer-content-top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-content-top img.liftow-logo  {
+        width: 400px;
+    }
+
+    .social-icon-container {
+        margin-bottom: 0;
+        align-items: center;
+    }
+}
+/* Footer | Condensed section | END */
